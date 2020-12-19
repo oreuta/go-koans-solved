@@ -15,7 +15,7 @@ func aboutCommonInterfaces() {
 		   $ open http://localhost:8080/pkg/bytes/
 		*/
 
-		assert(out.String() == "hello world") // get data from the io.Reader to the io.Writer
+		assert(out.String() == "hello world") // YOU HAVE CREATED out BUT DIDN'T FILL IT WITH ANY DATA.... PLEASE FIX IT
 	}
 
 	{
@@ -24,6 +24,6 @@ func aboutCommonInterfaces() {
 
 		out := new(bytes.Buffer)
 
-		assert(out.String() == "hello") // duplicate only a portion of the io.Reader
+		assert(out.String() == "hello") // YOU HAVE CREATED out BUT DIDN'T FILL IT WITH ANY DATA.... PLEASE FIX IT
 	}
 }
