@@ -12,7 +12,7 @@ func aboutBasics() {
 
 	assert(5%2 == 1)
 	assert(5*2 == 10)
-	assert(5^2 == 25)
+	assert(5^2 == 25) // IT'S NOT A RAISING TO POWER!!! GOLANG HAS PACKAGE MATH FOR THAT. PLEASE, FIX THIS LINE
 
 	var x int
 	assert(x == 0) // zero values are valued in Go
