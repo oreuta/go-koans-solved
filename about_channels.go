@@ -16,7 +16,7 @@ func aboutChannels() {
 	// the 'go' keyword runs a function-call in a new "goroutine"
 	// which executes "concurrently" with the calling "goroutine"
 	go func() {
-		// your code goes here
+		// YOU HAVE TO DRAIN CHANNEL HERE, OTHEWISE YOU GET DEAD LOCK OF THE RUNNING CODE
 	}()
 
 	assert(cap(ch) == 2) // we'll need to make room for the queue, or suffer deadlocks
