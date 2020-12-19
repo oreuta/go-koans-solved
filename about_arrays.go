@@ -10,10 +10,10 @@ func aboutArrays() {
 	assert(fruits[2] == "mango")  // it takes two to ...tango?
 	assert(fruits[3] == "")       // there is no spoon, only an empty value
 
-	assert(len(fruits) == 3) // the length is what the length is
+	assert(len(fruits) == 3) // WHY 3 ??? IT'S JUST A NUMBER OF ELEMENTS IN THE ARRAY. PLEASE, FIX IT
 	assert(cap(fruits) == 4) // it can hold no more
 
-	assert(fruits == [4]string{}) // comparing arrays is not like comparing apples and oranges
+	assert(fruits == [4]string{}) // ARE THESE ARRAYS THE SAME ??? PLEASE, FIX IT
 
 	tasty_fruits := fruits[1:3]                           // defining oneself as a variation of another
 	assert(fmt.Sprintf("%T", tasty_fruits) == "[]string") //and get not a simple array as a result
